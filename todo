@@ -1,0 +1,8 @@
+1. pipeline are not configured to scan for app vulnerabilities.
+2. codebuild pipelines not as banzai
+valid CG CMK
+3. pipeline SNOW change record approval check
+4. Codepipeline should be using codestar or service account token github conn
+5. pipeline IaC CFNGuard scan not in place
+6. qualys installed on ec2
+7. pipeline IaC Terraform sentinel scan not in place
