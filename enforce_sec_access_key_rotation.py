@@ -36,5 +36,5 @@ for user in response['Users']:
         # Create a new access key
         new_access_key = iam_client.create_access_key(UserName=user_name)
 
-        # Delete the old access key
-        iam_client.delete_access_key(UserName=user_name, AccessKeyId=access_keys['AccessKeyMetadata'][-1]['AccessKeyId'])
+        # Delete the old access key (Primary access key) if needed.
+        #iam_client.delete_access_key(UserName=user_name, AccessKeyId=access_keys['AccessKeyMetadata'][-1]['AccessKeyId'])
